@@ -14,7 +14,7 @@
             <div id="up"></div>
 
             <!--HEADER-->
-            <div id="header" class="header v-center">
+            <header id="header" class="header v-center">
                 <div class="header-cont v-center">
                     <div class="header-left v-center inline">
                         <a class="v-center inline" href="/">
@@ -22,14 +22,14 @@
                             <p>PLAFON</p>
                         </a>
                     </div>
-                    <div class="header-center inline">
+                    <nav class="header-center inline">
                         <a class="btn h-btn bg-red" href="/">Главная</a>
                         <a class="btn h-btn bg-purple" href="#">Новости</a>
                         <a class="btn h-btn bg-orange" href="#">Статьи</a>
                         <a class="btn h-btn bg-green" href="#">Релизы</a>
                         <a class="btn h-btn bg-grey" href="#">Приложения</a>
                         <a class="btn h-btn bg-blue" href="#">О проекте</a>
-                    </div>
+                    </nav>
                     <div class="header-right inline">
                         <a class="icon-link v-center" href="#">
                             <svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@
                         <label for="burger">
                             <div class="hide-fz"></div>
                         </label>
-                        <div class="drop-menu">
+                        <nav class="drop-menu">
                             <a class="dd-btn" href="#">Профиль</a>
                             <a class="dd-btn" href="/">Главная</a>
                             <a class="dd-btn" href="#">Новости</a>
@@ -55,7 +55,7 @@
                             <a class="dd-btn" href="#">Приложения</a>
                             <a class="dd-btn" href="#">О проекте</a>
                             <div class="bg-red dd-bottom"></div>
-                        </div>
+                        </nav>
                         <label class="btn-burger" for="burger">
                             <div class="btn burger">
                                 <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,11 +81,11 @@
                     </span>
                     <span class="switch-check"></span>
                 </label>
-            </div>
+            </header>
             <!--HEADER-END-->
 
             <!--MAIN-->
-            <div class="body">
+            <section class="body">
 
                 <!--FIRST-BLOCK-->
                 <div id="first" class="v-center first-block">
@@ -159,13 +159,13 @@
                 </div>
                 <!--SECOND-BLOCK-END-->
 
-            </div>
+            </section>
             <!--MAIN-END-->
 
             <!--FOOTER-->
-            <div class="footer">
+            <footer class="footer">
                 
-            </div>
+            </footer>
             <!--FOOTER-END-->
 
         </div>

@@ -1,0 +1,23 @@
+.header {
+    z-index: 9999999;
+}
+
+.up-arrow {
+    z-index: 999998;
+}
+
+.grid-12312 {
+    z-index: 99999;
+}
+
+.hide-fz {
+    z-index: 10000000;
+}
+
+.drop-menu {
+    z-index: 10000001;
+}
+
+.btn-burger {
+    z-index: 10000002;
+}

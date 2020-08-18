@@ -1,0 +1,23 @@
+.content {
+    width: 100%;
+}
+
+.body {
+    max-width: 1920px;
+    margin: auto;
+}
+
+.up-arrow {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 5px;
+}
+
+.up-arrow img {
+    transition: 200ms;
+}
+
+.up-arrow:hover img {
+    background: var(--up-arrow-hover);
+}

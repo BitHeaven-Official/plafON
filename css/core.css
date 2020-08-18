@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;500;600&display=swap');
+/*font-family: 'Signika', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+/*font-family: 'PT Sans', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+/*font-family: 'Pinyon Script', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/*font-family: 'Monoton', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+/*font-family: 'Noto Sans', sans-serif;*/
+
+@font-face {
+    font-family: bebas-neue;
+    src: url(/fonts/Bebas-Neue.ttf);
+}
+/*font-family: bebas-neue;*/
+
+@font-face {
+    font-family: net-ttcommons-bold;
+    src: url(/fonts/Net-TTCommons-Bold.ttf);
+}
+/*font-family: net-ttcommons-bold;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+.root {
+    transition: 200ms;
+    min-height: 100vh;
+}
+
+.content {
+    font-family: Poppins, sans-serif;
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
+}
+
+.h-center {
+    display: flex;
+    justify-content: center;
+}
+
+.all-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tac {
+    text-align: center;
+}
+
+a {
+    color: var(--link-1);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 66px;
+    line-height: 1.2;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h3 {
+    font-size: 31px;
+    font-weight: bold;
+    line-height: 1;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: normal;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    font-family: 'Signika', sans-serif;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'PT Sans', cursive;
+    line-height: 1.5;
+}
+
+.none {
+    display: none;
+}
+
+.grid {
+    display: grid;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline-flex;
+}
+
+.black {
+    color: var(--color-1);
+}
+
+.red {
+    color: var(--red);
+}
+
+.purple {
+    color: var(--purple);
+}
+
+.green {
+    color: var(--green);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.light-green {
+    color: var(--light-green);
+}
+
+.grey {
+    color: var(--grey);
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.bg-red {
+    background: var(--red);
+}
+
+.bg-purple {
+    background: var(--purple);
+}
+
+.bg-green {
+    background: var(--green);
+}
+
+.bg-blue {
+    background: var(--blue);
+}
+
+.bg-light-green {
+    background: var(--light-green);
+}
+
+.bg-grey {
+    background: var(--grey);
+}
+
+.bg-orange {
+    background: var(--orange);
+}
+
+.bg-orange-light {
+    background: var(--orange-light);
+}
+
+.bg-blue-light {
+    background: var(--blue-light);
+}
+
+.bg-green-light {
+    background: var(--green-light);
+}
+
+.bg-grey-light {
+    background: var(--grey-light);
+}
+
+.bg-red-light {
+    background: var(--red-light);
+}
+
+.orange-2 {
+    color: var(--orange-2);
+}
+
+.blue-2 {
+    color: var(--blue-2);
+}
+
+.green-2 {
+    color: var(--green-2);
+}
+
+.purple-2 {
+    color: var(--purple-2);
+}
+
+.red-2 {
+    color: var(--red-2);
+}
+
+.superthemes:checked + .root .black {
+    color: var(--color-1-dark);
+}
+
+.superthemes:checked + .root .grey {
+    color: var(--color-1-dark);
+}
+

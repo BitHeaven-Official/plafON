@@ -1,0 +1,329 @@
+.header {
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background: var(--header-background);
+    transition: 200ms;
+    transition-property: background;
+    box-shadow: 0px 4px 6px 3px var(--shadow-1);
+    backdrop-filter: blur(4px);
+}
+
+.header-cont {
+    max-width: 1920px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.header-left p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    margin-left: 24px;
+    color: var(--color-h);
+    filter: drop-shadow(0px 4px 4px var(--shadow-2));
+}
+
+.header-logo {
+    border-radius: 100%;
+    height: 75px;
+    width: 75px;
+    filter: drop-shadow(0px 4px 4px var(--shadow-2));
+}
+
+.header-left {
+    position: absolute;
+    left: 150px;
+}
+
+.header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn {
+    font-family: 'Signika', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 3px;
+    color: var(--color-2);
+    margin: 4px;
+    box-shadow: 0px 4px 4px var(--shadow-2);
+    backdrop-filter: blur(4px);
+    transition: 200ms;
+    transition-property: color, background, box-shadow, transform;
+}
+
+.h-btn {
+    padding: 17px 0;
+    width: 136px;
+}
+
+.btn:hover {
+    background: var(--hover-btn);
+    color: var(--color-1);
+    transform: translateY(4px);
+    box-shadow: 0 0 0 var(--shadow-1);
+}
+
+.header-right {
+    position: absolute;
+    right: 150px;
+}
+
+.header-right .icon-link{
+    margin: 5px;
+}
+
+.burger {
+    padding: 15px 0;
+    border-radius: 3px;
+    border: var(--border-btn) solid 2px;
+    height: 51px;
+    width: 51px;
+    display: none;
+}
+
+.dark-light {
+    width: 58px;
+    height: 34px;
+    position: absolute;
+    right: 25px;
+}
+
+.superthemes {
+    display: none;
+}
+
+.superthemes svg {
+    cursor: pointer;
+}
+
+.header-right .icon-link svg path {
+    transition: 200ms;
+}
+
+.header-right .icon-link:hover svg path {
+    fill: var(--color-1-hover);
+}
+
+.bg-check {
+    position: relative;
+    display: block;
+    width: 58px;
+    height: 34px;
+    background: var(--theme-switcher-bg);
+    border-radius: 1000px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 200ms;
+    filter: drop-shadow(0px 4px 4px var(--shadow-1));
+    backdrop-filter: blur(4px);
+}
+
+.on-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 8px 15px;
+    cursor: pointer;
+}
+
+.off-check {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.switch-check {
+    position: absolute;
+    top: 5px;
+    left: 28px;
+    background: var(--theme-switcher-switch);
+    border-radius: 100px;
+    height: 24px;
+    width: 24px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.drop-menu {
+    display: grid;
+    position: absolute;
+    width: 0;
+    top: 25px;
+    right: 20px;
+    height: 0;
+    border-radius: 5px;
+    transition: 400ms;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px var(--shadow-2);
+}
+
+.dd-btn {
+    font-family: 'Noto Sans Mro', 'Noto Sans';
+    font-size: 11px;
+    background: var(--dd-menu-btn);
+    height: 36px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid var(--dd-menu-bg);
+    transition: 200ms;
+}
+
+.dd-btn:last-child {
+    border-bottom: 0px;
+}
+
+.dd-btn:hover {
+    background: var(--dd-menu-btn-hover);
+}
+
+.dd-bottom {
+    height: 5px;
+}
+
+.hide-fz {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.burgercheck:checked ~ .drop-menu {
+    height: 257px;
+    top: 50px;
+    right: 0;
+    width: 136px;
+}
+
+.burgercheck:checked ~ label .hide-fz {
+    display: block;
+}
+
+.superthemes:checked + .root .content .header .dark-light .switch-check {
+    left: 5px;
+}
+
+.superthemes:checked + .root {
+    background: var(--background-dark);
+}
+
+.superthemes:checked + .root .content .header {
+    background: var(--header-background-dark);
+}
+
+.superthemes:checked + .root .content .header .header-cont .header-left p {
+    color: var(--color-1-dark);
+}
+
+.superthemes:checked + .root .content .header .header-cont .header-right .icon-link svg path {
+    fill: var(--color-1-dark);
+}
+
+.superthemes:checked + .root .content .header .header-cont .header-right .icon-link:hover svg path {
+    fill: var(--color-1-hover-dark);
+}
+
+.superthemes:checked + .root .btn:hover {
+    background: var(--hover-btn-dark);
+    color: var(--color-link-hover-1-dark);
+}
+
+@media screen and (max-width: 1670px) {
+    .h-btn {
+        width: 120px;
+        font-size: 16px;
+    }  
+}
+
+@media screen and (max-width: 1560px) {
+    .h-btn {
+        width: 110px;
+        font-size: 14px;
+    }  
+}
+
+@media screen and (max-width: 1510px) {
+    .h-btn {
+        width: 100px;
+        font-size: 14px;
+    }  
+}
+
+@media screen and (max-width: 1440px) {
+    .header-left {
+        left: 12.5px;
+    }
+    .header-right {
+        right: 100px;
+    }
+}
+
+
+@media screen and (max-width: 1220px) {
+    .header {
+        height: 85px;
+    }
+    .header-left .header-logo {
+        height: 60px;
+        width: 60px;
+    }
+    .header-center .h-btn,
+    .header-right .h-btn {
+        padding: 12px 0;
+        font-size: 14px;
+    }
+    .header-right .burger {
+        width: 41px;
+        height: 41px;
+        padding: 10px 0;
+    }
+    .header-center {
+        transform: none;
+        left: 90px;
+    }
+    .header-left p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .h-btn {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .header-left {
+        left: 50px;
+    }
+    .header-right {
+        right: 100px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header-left {
+        left: 12.5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-left p {
+        display: none;
+    }
+}

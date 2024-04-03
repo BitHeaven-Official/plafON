@@ -3,12 +3,12 @@
 * @bit.heaven (https://www.bitheaven.ru)
 */
 
-@import '/css/core.css?v=3';
-@import '/css/colors.css?v=4';
-@import '/css/z-index.css?v=2';
-@import '/css/content.css?v=3';
+@import 'css/core.css?v=3';
+@import 'css/colors.css?v=4';
+@import 'css/z-index.css?v=2';
+@import 'css/content.css?v=3';
 
-@import '/css/header.css?v=3';
-@import '/css/first-block.css?v=7';
-@import '/css/second-block.css?v=6';
-@import '/css/footer.css?v=2';
+@import 'css/header.css?v=3';
+@import 'css/first-block.css?v=7';
+@import 'css/second-block.css?v=6';
+@import 'css/footer.css?v=2';
